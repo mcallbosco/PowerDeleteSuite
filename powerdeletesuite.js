@@ -1,5 +1,5 @@
 var pd = {
-  version: "1.4.11",
+  version: "1.4.12",
   bookmarkver: "1.4",
   editStrings: [
     "I love ice cream.",
