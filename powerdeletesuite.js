@@ -304,7 +304,7 @@ var pd = {
         user: $("#header-bottom-right .user a").first().text(),
       };
       pd.endpoints = {
-        comments: "/user/" + pd.config.user + "/comments/.json",
+        comments: "/user/" + pd.config.user + "/overview/.json",
         submissions: "/user/" + pd.config.user + "/submitted/.json",
         search: "/search.json",
       };
