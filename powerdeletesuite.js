@@ -304,9 +304,10 @@ var pd = {
         user: $("#header-bottom-right .user a").first().text(),
       };
       pd.endpoints = {
-        comments: "/user/" + pd.config.user + "/overview/.json",
+        comments: "/user/" + pd.config.user + "/comments/.json",
         submissions: "/user/" + pd.config.user + "/submitted/.json",
         search: "/search.json",
+        overview: "/user/" + pd.config.user + "/overview/.json",
       };
     },
     applyDom: function () {
@@ -454,8 +455,9 @@ var pd = {
                   "comments",
                   "search",
                   "submissions",
+                  "overview",
                 ] /* Search is actually more efficient than submissions if we're not handling submissions (`self:1`) */
-              : ["comments", "submissions", "search"],
+              : ["comments", "submissions", "search","overview"],
           sorts: ["new", "hot", "top", "controversial"],
           timeframes: ["all", "hour", "day", "week", "month", "year"],
         },
